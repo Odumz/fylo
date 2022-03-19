@@ -1,0 +1,81 @@
+:root {
+    --color-primary: hsl(243, 87%, 12%);
+    --color-primary-desaturated: hsl(238, 22%, 44%);
+    --color-blue-accent: hsl(224, 93%, 58%);
+    --color-cyan: hsl(170, 45%, 43%);
+    --color-blue-grayish: hsl(240, 75%, 98%);
+    --color-gray: hsl(0, 0%, 75%);
+}
+
+html,
+body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+header,
+nav,
+a {
+    color: var(--color-primary);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-primary);
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--color-blue-accent);
+    padding: 12px 28px;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 32px;
+}
+
+nav {
+    margin: 6vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 30vw;
+}
+
+.nav-links {
+    display: flex;
+    z-index: 10;
+    padding: 0;
+    gap: 5rem;
+    align-items: center;
+}
+
+
