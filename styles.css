@@ -7,6 +7,11 @@
     --color-gray: hsl(0, 0%, 75%);
 }
 
+* {
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
+
 html,
 body {
     font-size: 14px;
@@ -38,6 +43,11 @@ ul {
     list-style: none;
 }
 
+nav {
+    overflow: hidden;
+    /* width: 50vw; */
+}
+
 button {
     cursor: pointer;
     color: #ffffff;
@@ -60,7 +70,8 @@ header {
 }
 
 nav {
-    margin: 6vh 5vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 6vh 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,4 +89,127 @@ nav {
     align-items: center;
 }
 
+.landing {
+    padding: 12vh 5vw;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: calc(100vh);
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+}
 
+.border {
+    border: 1px solid ;
+    border-radius: 5px;
+}
+
+.landing-text > h1 {
+    font-size: 2.5rem;
+}
+
+.landing-text > p {
+    font-size: 1.2rem;
+}
+
+.curve {
+    overflow-x: hidden;
+    margin-bottom: -5px;
+}
+
+.features {
+    overflow: hidden;
+    padding: 0vh 5vw;
+    padding-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    background-color: var(--color-blue-grayish);
+}
+
+.feature-text > h1 {
+    font-size: 2.3rem;
+}
+
+.feature-text > p {
+    font-size: 1.2rem;
+}
+
+.about-link {
+    color: var(--color-cyan);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.about-link > span {
+    border: 10px;
+}
+
+input {
+    width: 340px;
+    height: 40px;
+    padding: 0.3rem 1rem;
+    margin: 1.3rem 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.cta {
+    overflow-x: hidden;
+    padding: 8vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary-desaturated);
+    color: #ffffff;    
+}
+
+.cta-text,
+.cta-heading {
+    color: #ffffff;
+}
+
+.cta-text {
+    width: 45%;
+}
+
+.cta-form {
+    display: grid;
+    width: 40%;
+}
+
+footer {
+    padding: 12vh 5vw;
+    display: grid;
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: top;
+    justify-items: center;
+    color: #ffffff !important;
+}
+
+.footer-logo {
+    padding-left: 5rem;
+}
+
+.footer-item {
+    color: #ffffff !important;
+}
+
+.flex {
+    display: flex;
+    gap: 14px;
+    padding: 10px 0px
+}
